@@ -11,4 +11,14 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  pages: {
+    index: {
+      entry: "src/main.js",
+      template: "public/index.html",
+    },
+    about: {
+      entry: "src/about.js",
+      template: "public/about.html",
+    },
+  },
 });

@@ -3,12 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "vue-cli-service build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "add": "vue-cli-service add",
     "dev": "vite",
-    "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "serv": "vue-cli-service serv"
   },
   "dependencies": {
+    "@vue/cli": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
@@ -20,6 +24,7 @@
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "vue-cli-plugin-multi-page": "~0.8.0"
   }
 }
